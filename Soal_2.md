@@ -1,19 +1,45 @@
-SOAL 2: Operasi CRUD Dasar [Bobot: 50%]
-(SCPMK0720802 - CRUD Dasar) Manipulasi baris data dasar.
+# SOAL 2: Operasi CRUD Dasar
+**Bobot: 50% — SCPMK0720802 (CRUD Dasar)**
 
-Berdasarkan 3 tabel yang telah Anda buat di Soal 1, lakukan urutan operasi operasional berikut menggunakan kode SQL:
+## Jawaban dan Hasil
 
-1. [CREATE] Lakukan INSERT minimal 3 baris data dummy ke masing-masing tabel (total 9 baris data).
-2. [READ] Tampilkan seluruh isi salah satu Tabel Induk menggunakan perintah SELECT *.
-3. [UPDATE] Ubah satu nilai data (misal: mengubah harga, mengubah status, atau memperbaiki nama) pada Tabel     Transaksi. Wajib menggunakan klausa WHERE pada Primary Key agar tidak terjadi update massal.
-4. [DELETE] Hapus salah satu baris data dummy pada Tabel Transaksi. Wajib menggunakan klausa WHERE.
+### 1. CREATE — Menambahkan Data
 
-JAWABAN & HASIL :
-1. <img src="assets/soal2no1.png" alt="Description" style="object-fit:cover" width="300px" height="300px">
-2. <img src="assets/soal2no2.png" alt="Description" style="object-fit:cover" width="300px" height="300px">
-3. <img src="assets/soal2no3.png" alt="Description" style="object-fit:cover" width="300px" height="300px">
-    3.1 <img src="assets/beforeno3.png" alt="Description" style="object-fit:cover" width="300px" height="300px">
-    3.2 <img src="assets/afterno3.png" alt="Description" style="object-fit:cover" width="300px" height="300px">
-4. <img src="assets/soal4.png" alt="Description" style="object-fit:cover" width="300px" height="300px">
-    4.1 <img src="assets/afterno3.png" alt="Description" style="object-fit:cover" width="300px" height="300px">
-    4.2 <img src="assets/soal2no4after.png" alt="Description" style="object-fit:cover" width="300px" height="300px">
+Melakukan operasi `INSERT` untuk menambahkan minimal 3 baris data dummy ke masing-masing tabel, yaitu mahasiswa, matkul, dan KRS.
+
+![Hasil INSERT data ke tiga tabel](assets/soal2no1.png)
+
+### 2. READ — Menampilkan Data
+
+Menampilkan seluruh isi tabel induk mahasiswa menggunakan perintah `SELECT *`.
+
+![Hasil SELECT seluruh data mahasiswa](assets/soal2no2.png)
+
+### 3. UPDATE — Mengubah Data
+
+Mengubah nilai semester pada tabel KRS dengan menggunakan klausa `WHERE` berdasarkan Primary Key `id_krs` agar hanya satu baris data yang diperbarui.
+
+![Perintah UPDATE data KRS](assets/soal2no3.png)
+
+**3.1. Data sebelum diperbarui**
+
+![Data KRS sebelum UPDATE](assets/beforeno3.png)
+
+**3.2. Data setelah diperbarui**
+
+![Data KRS setelah UPDATE](assets/afterno3.png)
+
+### 4. DELETE — Menghapus Data
+
+Menghapus salah satu baris data dummy pada tabel KRS menggunakan klausa `WHERE` berdasarkan Primary Key `id_krs` agar hanya data yang ditentukan yang dihapus.
+
+![Perintah DELETE data KRS](assets/soal4.png)
+
+**4.1. Data sebelum dihapus**
+
+![Data KRS sebelum DELETE](assets/afterno3.png)
+
+**4.2. Data setelah dihapus**
+
+![Data KRS setelah DELETE](assets/soal2no4after.png)
+
