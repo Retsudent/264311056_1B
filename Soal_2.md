@@ -33,7 +33,7 @@ Mengubah nilai semester pada tabel KRS dengan menggunakan klausa `WHERE` berdasa
 
 Menghapus salah satu baris data dummy pada tabel KRS menggunakan klausa `WHERE` berdasarkan Primary Key `id_krs` agar hanya data yang ditentukan yang dihapus.
 
-![Perintah DELETE data KRS](assets/soal4.png)
+![Perintah DELETE data KRS](assets/soal2no4.png)
 
 **4.1. Data sebelum dihapus**
 
