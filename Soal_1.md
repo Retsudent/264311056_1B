@@ -1,15 +1,27 @@
 # SOAL 1: Data Definition & Relasi
 **Bobot: 40% — SCPMK0720801 (DDL & Relasi)**
 
+## Soal
+
+Pembuatan struktur fisik dan ketepatan relasi.
+
+1. Pilihlah **3 tabel** dari proyek kelompok Anda yang saling berelasi (contoh: 2 tabel induk/master dan 1 tabel transaksi/anak).
+2. Tuliskan kode SQL `CREATE TABLE` untuk ketiga tabel tersebut.
+3. **Syarat wajib:**
+   - Tentukan tipe data yang rasional dan *Primary Key* yang valid.
+   - Harus ada deklarasi *Foreign Key* yang menghubungkan tabel transaksi dengan kedua tabel induk.
+
+## Jawaban
+
 ### 1. Pemilihan Tiga Tabel
 
 Tiga tabel yang digunakan dalam proyek database SIAKAD adalah:
 
-1. **Mahasiswa** sebagai tabel induk yang menyimpan data mahasiswa.
-2. **Matkul** sebagai tabel induk yang menyimpan data mata kuliah.
-3. **KRS** sebagai tabel transaksi yang menyimpan mata kuliah yang diambil oleh mahasiswa.
+1. **Mahasiswa:** Tabel induk yang menyimpan data mahasiswa.
+2. **Matkul:** Tabel induk yang menyimpan data mata kuliah.
+3. **KRS:** Tabel transaksi yang menyimpan mata kuliah yang diambil mahasiswa.
 
-### 2. Kode SQL CREATE TABLE
+### 2. Kode SQL
 
 ```sql
 USE siakad_database;
@@ -55,9 +67,10 @@ CREATE TABLE krs (
 
 ### 3. Penjelasan Relasi
 
-- **Primary Key (PK):** `nim` pada tabel mahasiswa, `kode_mk` pada tabel matkul, dan `id_krs` pada tabel KRS digunakan sebagai identitas unik setiap data.
-- **Foreign Key (FK):** Kolom `nim` pada tabel KRS menghubungkan data KRS dengan tabel mahasiswa, sedangkan kolom `kode_mk` menghubungkan tabel KRS dengan tabel matkul.
-- **ON DELETE CASCADE:** Data KRS yang terkait akan terhapus ketika data induknya dihapus.
-- **ON UPDATE CASCADE:** Perubahan nilai Primary Key pada tabel induk akan diterapkan pada Foreign Key yang terkait.
+- **Primary Key (PK):** `nim` pada tabel mahasiswa, `kode_mk` pada tabel matkul, dan `id_krs` pada tabel KRS.
+- **Foreign Key (FK):** Kolom `nim` dan `kode_mk` pada tabel KRS menghubungkan tabel transaksi dengan tabel mahasiswa dan matkul.
+- **ON DELETE CASCADE:** Data KRS yang terkait akan ikut terhapus ketika data induknya dihapus.
+- **ON UPDATE CASCADE:** Perubahan nilai kunci pada tabel induk akan diterapkan pada data terkait.
 
-Dengan struktur tersebut, tabel KRS memiliki relasi dengan kedua tabel induk, yaitu mahasiswa dan mata kuliah, sesuai dengan persyaratan soal.
+Dengan struktur tersebut, tabel KRS terhubung dengan kedua tabel induk sesuai persyaratan soal.
+
