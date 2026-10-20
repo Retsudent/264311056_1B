@@ -51,7 +51,6 @@ Contoh format hasil eksekusi:
 | Anis Putri | 1 |
 | Andi Pratama | 1 |
 
-*Catatan: Hasil sebenarnya mengikuti data yang tersimpan di database dan transaksi yang belum dihapus.*
 
 ### 4. Screenshot Hasil Eksekusi
 
