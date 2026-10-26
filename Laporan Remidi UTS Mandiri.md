@@ -234,7 +234,7 @@ Second Normal Form (2NF) menghilangkan ketergantungan parsial, yaitu ketika atri
 ### Tabel Pengajuan Beasiswa
 
 | id_pengajuan (PK) | nim (FK) | id_beasiswa (FK) | tanggal_pengajuan | semester | tahun_akademik | status_pengajuan | catatan_verifikasi |
-| :--- | :--- | :--- | :---: | :---: | :---: | :--- |
+| :--- | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
 | PB001 | 230001 | B001 | 10/08/2026 | 3 | 2026/2027 | Diajukan | - |
 | PB002 | 230002 | B001 | 11/08/2026 | 5 | 2026/2027 | Diproses | Dokumen sedang diperiksa |
 | PB003 | 230001 | B002 | 12/08/2026 | 3 | 2026/2027 | Diajukan | - |
